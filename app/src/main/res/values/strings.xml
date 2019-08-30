@@ -1,0 +1,70 @@
+<resources>
+	<string name="app_name">Movie Catalogue</string>
+	
+	<string name="movies">Movies</string>
+	<string name="tv">TV Show</string>
+	<string name="movies_now">Movies Now</string>
+	<string name="tv_now">TV Show Now</string>
+	
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="nav_header_title">Android Studio</string>
+	<string name="nav_header_subtitle">android.studio@android.com</string>
+	<string name="nav_header_desc">Navigation header</string>
+	<string name="action_settings">Settings</string>
+	
+	<!--navigation menu-->
+	<string name="now_playing">Now Playing</string>
+	<string name="popular">Popular Catalogue</string>
+	<string name="new_release">New Movies Release</string>
+	<string name="search_movie">Search Movie</string>
+	<string name="search_tv">Search Tv Show</string>
+	
+	
+	<string name="title" translatable="false">Title</string>
+	<string name="description" translatable="false">Description</string>
+	<string name="full_description" translatable="false">Full Description</string>
+	<string name="year" translatable="false">Year</string>
+	<string name="score" translatable="false">Score</string>
+	<string name="overview">Overview</string>
+	
+	<!--No Data-->
+	<string name="no_date">(---)</string>
+	<string name="no_overview">(No data)</string>
+	
+	<!--preference-->
+	<string name="settings">Settings</string>
+	<string name="pref_appname">preference</string>
+	<string name="language">Language</string>
+	<string name="pref_language">language</string>
+	
+	<string name="pref_reminder">reminder</string>
+	<string name="reminder_notification">Reminder Notification</string>
+	<string name="reminder_message">Movie Catalogue Reminder</string>
+	
+	<string name="pref_release">release</string>
+	<string name="release_notification">Release Notification</string>
+	<string name="release_message">New Movies Release</string>
+	
+	
+	<!--favorite-->
+	<string name="favorite_list">Favorite List</string>
+	<string name="favorite_movie">Favorite Movie</string>
+	<string name="favorite_tv">Favorite Tv Show</string>
+	<string name="favorite_add">Add Favorite</string>
+	<string name="favorite_remove">Remove Favorite</string>
+	<string name="empty">Empty!</string>
+	<string name="empty_notice">Please add favorite list !</string>
+	<!--insert-->
+	<string name="insert_favorite"> add to favorite list</string>
+	<!--delete-->
+	<string name="delete_favorite"> remove from favorite list</string>
+	
+	
+	<!--widget-->
+	<string name="appwidget_text">EXAMPLE</string>
+	<string name="add_widget">Add widget</string>
+	<string name="empty_text">NO DATA</string>
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	
+	<Preference
+		android:title="@string/language"
+		android:key="@string/pref_language"
+		app:iconSpaceReserved="false"/>
+	
+		
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="@string/pref_reminder"
+		android:title="@string/reminder_notification"
+		app:iconSpaceReserved="false"/>
+		
+	
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="@string/pref_release"
+		android:title="@string/release_notification"
+		app:iconSpaceReserved="false"/>
+	
+	
+	
+</PreferenceScreen>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+	
+	<group android:checkableBehavior="none"
+		android:id="@+id/group1">
+		<item
+			android:id="@+id/nav_now_playing"
+			android:icon="@drawable/ic_menu_live"
+			android:title="@string/now_playing" />
+		<item
+			android:id="@+id/nav_popular"
+			android:icon="@drawable/ic_menu_popular"
+			android:title="@string/popular" />
+		
+		<item
+			android:id="@+id/nav_release"
+			android:icon="@drawable/ic_menu_release"
+			android:title="@string/new_release"/>
+		
+	</group>
+	
+	
+	<group android:checkableBehavior="none"
+		android:id="@+id/group2">
+		<item
+			android:id="@+id/nav_search_movie"
+			android:icon="@drawable/ic_search_black_24dp"
+			android:title="@string/search_movie"/>
+		
+		<item
+			android:id="@+id/nav_search_tv"
+			android:icon="@drawable/ic_search_black_24dp"
+			android:title="@string/search_tv"/>
+	</group>
+	
+	
+	<item android:title="@string/favorite_list">
+		<menu>
+			<item
+				android:id="@+id/nav_favorite_movie"
+				android:icon="@drawable/ic_menu_movie"
+				android:title="@string/favorite_movie" />
+			<item
+				android:id="@+id/nav_favorite_tv"
+				android:icon="@drawable/ic_menu_tv"
+				android:title="@string/favorite_tv" />
+		</menu>
+	</item>
+
+</menu>

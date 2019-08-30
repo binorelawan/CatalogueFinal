@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.detail.DetailTvActivity">
+	
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fitsSystemWindows="true"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		
+		<com.google.android.material.appbar.CollapsingToolbarLayout
+			android:id="@+id/main_collapsing_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fitsSystemWindows="true"
+			app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways">
+			
+			<ImageView
+				android:id="@+id/img_poster"
+				android:layout_width="match_parent"
+				android:layout_height="500dp"
+				android:adjustViewBounds="true"
+				android:scaleType="fitXY"
+				tools:srcCompat="@tools:sample/avatars"
+				tools:ignore="ContentDescription" />
+			
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/main_toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				app:layout_collapseMode="pin"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+		</com.google.android.material.appbar.CollapsingToolbarLayout>
+	</com.google.android.material.appbar.AppBarLayout>
+	
+	
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clipToPadding="false"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		
+		
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp">
+			
+			
+			<TextView
+				android:id="@+id/txt_name"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/movies"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+				tools:ignore="NotSibling" />
+			
+			<TextView
+				android:id="@+id/txt_year"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/year"
+				android:textStyle="italic"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+			
+			<ImageView
+				android:id="@+id/img_star"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="16dp"
+				app:layout_constraintStart_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/txt_year"
+				app:srcCompat="@drawable/ic_star_black_24dp" />
+			
+			<TextView
+				android:id="@+id/txt_score"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/score"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintBottom_toBottomOf="@+id/img_star"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/img_star"
+				app:layout_constraintTop_toTopOf="@+id/img_star" />
+			
+			<TextView
+				android:id="@+id/overView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="24dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/overview"
+				android:textAllCaps="true"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/txt_score" />
+			
+			<TextView
+				android:id="@+id/txt_overview"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/overview"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/overView" />
+			
+			<Button
+				android:id="@+id/btn_favorite"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="8dp"
+				android:text="@string/favorite_add"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/txt_overview" />
+		
+		
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	
+	</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
